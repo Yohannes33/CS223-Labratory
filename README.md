@@ -1,2 +1,2 @@
 # Beginning
-my first step to github
+my first step into github
