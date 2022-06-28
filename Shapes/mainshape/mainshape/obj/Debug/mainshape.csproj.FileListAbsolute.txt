@@ -1,0 +1,8 @@
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\bin\Debug\mainshape.exe.config
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\bin\Debug\mainshape.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\bin\Debug\mainshape.pdb
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\obj\Debug\mainshape.csproj.AssemblyReference.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\obj\Debug\mainshape.csproj.SuggestedBindingRedirects.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\obj\Debug\mainshape.csproj.CoreCompileInputs.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\obj\Debug\mainshape.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\Shapes\mainshape\mainshape\obj\Debug\mainshape.pdb
