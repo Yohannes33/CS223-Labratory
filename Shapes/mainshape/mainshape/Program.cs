@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace mainshape
 {
-    abstract class Base
+    
+     abstract class Base
     {
         public abstract double CalculateArea();
         public abstract double CalculatePerimeter();
     }
-    class Circle : Base
+   class Circle : Base
     {
 
         static readonly double PI = 3.1415;
