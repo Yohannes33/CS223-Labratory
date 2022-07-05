@@ -1,0 +1,22 @@
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\bin\Debug\Lab desktop.exe.config
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\bin\Debug\Lab desktop.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\bin\Debug\Lab desktop.pdb
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.csproj.AssemblyReference.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab_desktop.Form1.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab_desktop.Properties.Resources.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.csproj.GenerateResource.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.csproj.CoreCompileInputs.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\Lab desktop\obj\Debug\Lab desktop.pdb
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\bin\Debug\Lab desktop.exe.config
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\bin\Debug\Lab desktop.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\bin\Debug\Lab desktop.pdb
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.csproj.AssemblyReference.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab_desktop.Form1.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab_desktop.Properties.Resources.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.csproj.GenerateResource.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.csproj.CoreCompileInputs.cache
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.exe
+C:\Users\Netsi\Desktop\YN\hilcoe\C#\YN inventory GUI\obj\Debug\Lab desktop.pdb
