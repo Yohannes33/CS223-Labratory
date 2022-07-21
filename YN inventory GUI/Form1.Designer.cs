@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtnumber = new System.Windows.Forms.TextBox();
             this.btnadd = new System.Windows.Forms.Button();
-            this.txtdate = new System.Windows.Forms.TextBox();
             this.txtinventorynum = new System.Windows.Forms.TextBox();
             this.txtobjectname = new System.Windows.Forms.TextBox();
             this.txtcount = new System.Windows.Forms.TextBox();
@@ -42,6 +42,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btncancel = new System.Windows.Forms.Button();
+            this.Allproducts = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.Allproducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnumber
@@ -54,7 +59,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(142, 315);
+            this.btnadd.Location = new System.Drawing.Point(229, 303);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(113, 40);
             this.btnadd.TabIndex = 1;
@@ -62,16 +67,9 @@
             this.btnadd.UseVisualStyleBackColor = true;
             this.btnadd.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // txtdate
-            // 
-            this.txtdate.Location = new System.Drawing.Point(174, 68);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(274, 26);
-            this.txtdate.TabIndex = 2;
-            // 
             // txtinventorynum
             // 
-            this.txtinventorynum.Location = new System.Drawing.Point(468, 68);
+            this.txtinventorynum.Location = new System.Drawing.Point(664, 68);
             this.txtinventorynum.Name = "txtinventorynum";
             this.txtinventorynum.Size = new System.Drawing.Size(197, 26);
             this.txtinventorynum.TabIndex = 3;
@@ -79,7 +77,7 @@
             // 
             // txtobjectname
             // 
-            this.txtobjectname.Location = new System.Drawing.Point(23, 150);
+            this.txtobjectname.Location = new System.Drawing.Point(23, 160);
             this.txtobjectname.Name = "txtobjectname";
             this.txtobjectname.Size = new System.Drawing.Size(642, 26);
             this.txtobjectname.TabIndex = 4;
@@ -93,7 +91,7 @@
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(280, 234);
+            this.txtprice.Location = new System.Drawing.Point(456, 234);
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(150, 26);
             this.txtprice.TabIndex = 6;
@@ -110,7 +108,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 36);
+            this.label2.Location = new System.Drawing.Point(252, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 8;
@@ -120,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(464, 36);
+            this.label3.Location = new System.Drawing.Point(660, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 9;
@@ -129,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 115);
+            this.label4.Location = new System.Drawing.Point(19, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 20);
             this.label4.TabIndex = 10;
@@ -147,7 +145,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(278, 200);
+            this.label6.Location = new System.Drawing.Point(452, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 20);
             this.label6.TabIndex = 12;
@@ -155,7 +153,7 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(345, 315);
+            this.btncancel.Location = new System.Drawing.Point(613, 303);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(103, 39);
             this.btncancel.TabIndex = 13;
@@ -163,12 +161,38 @@
             this.btncancel.UseVisualStyleBackColor = true;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
+            // Allproducts
+            // 
+            this.Allproducts.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Allproducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Allproducts.Location = new System.Drawing.Point(2, 381);
+            this.Allproducts.Name = "Allproducts";
+            this.Allproducts.RowHeadersWidth = 62;
+            this.Allproducts.RowTemplate.Height = 28;
+            this.Allproducts.Size = new System.Drawing.Size(953, 250);
+            this.Allproducts.TabIndex = 14;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(256, 66);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(295, 26);
+            this.dateTimePicker1.TabIndex = 15;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 12, 17, 39, 28, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(707, 417);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(954, 634);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Allproducts);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -180,12 +204,13 @@
             this.Controls.Add(this.txtcount);
             this.Controls.Add(this.txtobjectname);
             this.Controls.Add(this.txtinventorynum);
-            this.Controls.Add(this.txtdate);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.txtnumber);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Allproducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +220,6 @@
 
         private System.Windows.Forms.TextBox txtnumber;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.TextBox txtdate;
         private System.Windows.Forms.TextBox txtinventorynum;
         private System.Windows.Forms.TextBox txtobjectname;
         private System.Windows.Forms.TextBox txtcount;
@@ -207,6 +231,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.DataGridView Allproducts;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
