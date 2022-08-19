@@ -32,9 +32,9 @@ namespace Lab_desktop
             string check = "admin";
             if (textBox1.Text == check && textBox2.Text == check)
             {
-                Form1 form = new Form1(check);
-                form.Show();
-                this.Hide();
+                Main_container container = new Main_container(check);
+                container.Show();
+                //this.Hide();
             }
             else
             {

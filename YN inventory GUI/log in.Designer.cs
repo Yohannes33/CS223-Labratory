@@ -90,6 +90,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "log_in";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "log_in";
             this.Load += new System.EventHandler(this.log_in_Load);
             this.ResumeLayout(false);
