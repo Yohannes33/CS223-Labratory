@@ -15,9 +15,10 @@ namespace Lab_desktop
 
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string username)
         {
             InitializeComponent();
+            lblusername.Text = username;
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
@@ -39,7 +40,11 @@ namespace Lab_desktop
                 Price = txtprice.Text,
                 Date = dateTimePicker1.Value
             };
-            
+            string checkedItems = "";
+            foreach (var item in checkedListBox1.CheckedItems)
+            {
+                checkedItems += item.ToString();
+            }
             if (string.IsNullOrEmpty(txtnumber.Text))
             {
 
@@ -106,17 +111,32 @@ namespace Lab_desktop
                 else
                 {
                     errorProvider1.Clear();
+
                     it.save();
+                    MessageBox.Show(checkedItems);
                     MessageBox.Show("Added successfully ");
                     Allproducts.DataSource = null;
                     Allproducts.DataSource = Model.GetAllProducts();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("invalid price !!!");
+                MessageBox.Show(ex.Message);
             }
-           
+            try
+            {
+                int q =int.Parse(txtcount.Text);
+                q= int.Parse(txtprice.Text);
+                q = int.Parse(txtinventorynum.Text);
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                throw;
+            }
             
         }
         
@@ -133,7 +153,7 @@ namespace Lab_desktop
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+           this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -147,6 +167,21 @@ namespace Lab_desktop
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

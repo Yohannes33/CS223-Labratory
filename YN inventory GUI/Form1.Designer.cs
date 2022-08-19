@@ -45,8 +45,14 @@
             this.Allproducts = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btnsimple = new System.Windows.Forms.RadioButton();
+            this.btnvariable = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblusername = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Allproducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtnumber
@@ -59,7 +65,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(229, 303);
+            this.btnadd.Location = new System.Drawing.Point(192, 335);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(113, 40);
             this.btnadd.TabIndex = 1;
@@ -153,7 +159,7 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(613, 303);
+            this.btncancel.Location = new System.Drawing.Point(456, 336);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(103, 39);
             this.btncancel.TabIndex = 13;
@@ -185,12 +191,73 @@
             this.dateTimePicker1.Value = new System.DateTime(2022, 7, 12, 17, 39, 28, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "soap ",
+            " snak  ",
+            " milk ",
+            " fruit "});
+            this.checkedListBox1.Location = new System.Drawing.Point(759, 160);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(142, 119);
+            this.checkedListBox1.TabIndex = 16;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // btnsimple
+            // 
+            this.btnsimple.AutoSize = true;
+            this.btnsimple.Location = new System.Drawing.Point(6, 25);
+            this.btnsimple.Name = "btnsimple";
+            this.btnsimple.Size = new System.Drawing.Size(85, 24);
+            this.btnsimple.TabIndex = 17;
+            this.btnsimple.TabStop = true;
+            this.btnsimple.Text = "simple";
+            this.btnsimple.UseVisualStyleBackColor = true;
+            this.btnsimple.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // btnvariable
+            // 
+            this.btnvariable.Location = new System.Drawing.Point(145, 25);
+            this.btnvariable.Name = "btnvariable";
+            this.btnvariable.Size = new System.Drawing.Size(126, 24);
+            this.btnvariable.TabIndex = 0;
+            this.btnvariable.TabStop = true;
+            this.btnvariable.Text = "Variable";
+            this.btnvariable.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnvariable);
+            this.groupBox1.Controls.Add(this.btnsimple);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(23, 269);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(295, 60);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Product Type";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Location = new System.Drawing.Point(858, 9);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(84, 20);
+            this.lblusername.TabIndex = 20;
+            this.lblusername.Text = "user name";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(954, 634);
+            this.Controls.Add(this.lblusername);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Allproducts);
             this.Controls.Add(this.btncancel);
@@ -211,6 +278,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Allproducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +303,11 @@
         private System.Windows.Forms.DataGridView Allproducts;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.RadioButton btnsimple;
+        private System.Windows.Forms.RadioButton btnvariable;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblusername;
     }
 }
 
