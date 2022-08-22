@@ -24,6 +24,10 @@ namespace Lab_desktop
 
         private void addNewProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
             Form1 newform = new Form1("Add Product ");
             newform.MdiParent = this;
             newform.Show();
@@ -32,6 +36,28 @@ namespace Lab_desktop
         private void Main_container_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void searchProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            SearchProduct search = new SearchProduct();
+            search.MdiParent = this;
+            search.Show();
+        }
+
+        private void updateProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            Update_Products update = new Update_Products();
+            update.MdiParent = this;
+            update.Show();
         }
     }
 }

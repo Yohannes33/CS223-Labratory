@@ -33,3 +33,7 @@ C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Deb
 C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab desktop.pdb
 C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.log_in.resources
 C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.Main_container.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.SearchProduct.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.Update_Products.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.Main.resources
+C:\Users\Netsi\Desktop\YN\hilcoe\Github\CS223-Labratory\YN inventory GUI\obj\Debug\Lab_desktop.Product_card.resources

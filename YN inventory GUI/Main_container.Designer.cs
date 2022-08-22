@@ -37,6 +37,7 @@
             this.addNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewProductToolStripMenuItem,
             this.updateProductToolStripMenuItem,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.searchProductToolStripMenuItem});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.productToolStripMenuItem.Text = "product";
@@ -76,6 +78,7 @@
             this.updateProductToolStripMenuItem.Name = "updateProductToolStripMenuItem";
             this.updateProductToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.updateProductToolStripMenuItem.Text = "update product";
+            this.updateProductToolStripMenuItem.Click += new System.EventHandler(this.updateProductToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -111,6 +114,13 @@
             this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(182, 34);
             this.deleteToolStripMenuItem1.Text = "delete";
             // 
+            // searchProductToolStripMenuItem
+            // 
+            this.searchProductToolStripMenuItem.Name = "searchProductToolStripMenuItem";
+            this.searchProductToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchProductToolStripMenuItem.Text = "Search Product";
+            this.searchProductToolStripMenuItem.Click += new System.EventHandler(this.searchProductToolStripMenuItem_Click);
+            // 
             // Main_container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -140,5 +150,6 @@
         private System.Windows.Forms.ToolStripMenuItem addNewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem searchProductToolStripMenuItem;
     }
 }
