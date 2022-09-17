@@ -59,5 +59,10 @@ namespace Lab_desktop
             update.MdiParent = this;
             update.Show();
         }
+
+        private void displayProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
