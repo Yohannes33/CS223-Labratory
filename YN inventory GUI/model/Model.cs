@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.SqlClient;
 namespace Lab_desktop.model
 {
     internal class Model
@@ -19,6 +19,30 @@ namespace Lab_desktop.model
 
         public void save()
         {
+            try
+            {
+                string connstring = @"Data source= localhost ;initial Catalog=Lab;Integrated security= true ";
+                SqlConnection con = new SqlConnection(connstring);
+                con.Open();
+                
+                string query = "insert into products values(@date,2,'ab',3)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@date",this.Number);
+                //cmd commandtype = commandtype storeprocedure
+                //cmd parameters add("@price",sqldbtype int)value = 
+                //cmd.Parameters Addvalues( )
+                var result = cmd.ExecuteNonQuery();// number of rows affected 
+                //var result = cmd.ExecuteScalar();// single value is returned 
+                //var result = cmd.ExecuteReader();// multiple elements are returned
+
+                
+
+
+                con.Close();
+            }
+            catch (Exception)
+            {
+            }
             modelList.Add(this);
                 
         }
